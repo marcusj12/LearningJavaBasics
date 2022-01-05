@@ -11,14 +11,16 @@ public class Main {
         System.out.println(fullName);
 */
 
-        String createdName = createFullName(firstName, lastName);
-        System.out.println(createdName);
-
+       // String createdName = createFullName(firstName, lastName);
+         // System.out.println(createdName);
+        String generatedName =  NameGenerator.generateFullName(firstName, lastName);
+        System.out.println(generatedName);
     }
 
     //Java Challenge # 2
     public static String createFullName(String fName, String lName) {
         return fName + " " + lName;
+
     }
 }
 
