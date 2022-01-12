@@ -18,8 +18,7 @@ public class Main {
 
         /*
         Make: Camaro 2SS, Model: Chevy, mileage: 10000, gasTankPercent: 0.10
-        Make: Mustang GT Model: Ford, mileage: 30000, gasTankPercent: 0.50
-
+//        Make: Mustang GT Model: Ford, mileage: 30000, gasTankPercent: 0.50
         Make: Hellcat, Model: Dodge, mileage: 100, gasTankPercent: 0.90
         */
 
