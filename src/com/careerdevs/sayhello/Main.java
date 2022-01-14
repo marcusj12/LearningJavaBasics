@@ -31,9 +31,6 @@ public class Main {
 //        Scanner scanner3 = new Scanner(System.in);
 //        System.out.print("What is your age?\n Age: ");
 //        byte age = scanner3.nextByte();
-
+        //
     }
 }
-/*
-next() vs nextLine()
- */
