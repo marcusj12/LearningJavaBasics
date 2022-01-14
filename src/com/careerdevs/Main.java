@@ -3,16 +3,18 @@ package com.careerdevs;
 public class Main {
 
     public static void main(String[] args) {
-
+/*
+        //Challenge 1
         String firstName = "Marcus";
         String lastName = "Jennings";
-/*
         String fullName = firstName + " " + lastName;
         System.out.println(fullName);
 */
-
+        //Challenge 2
        // String createdName = createFullName(firstName, lastName);
          // System.out.println(createdName);
+
+        //Challenge 3
 //        String generatedName =  NameGenerator.generateFullName(firstName, lastName);
 //        System.out.println(generatedName);
 
@@ -22,14 +24,12 @@ public class Main {
         Make: Hellcat, Model: Dodge, mileage: 100, gasTankPercent: 0.90
         */
 
-
+        //Challenge 4
         Car carOne = new Car("Camaro 2ss", "Chevy", 10_000,.10f);
-        Car carTwo = new Car("Mustang GT", "Ford",30_000, .50f);
-        Car carThree = new Car("Hellcat","Dodge", 100,.90f);
-
-        //Standard Solution
         System.out.println(carOne.make + " " + carOne.model);
+        Car carTwo = new Car("Mustang GT", "Ford",30_000, .50f);
         System.out.println(carTwo.make + " " + carTwo.model);
+        Car carThree = new Car("Hellcat","Dodge", 100,.90f);
         System.out.println(carThree.make + " " + carThree.model);
 
         //Bonus solution: Array
