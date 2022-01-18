@@ -1,4 +1,4 @@
-package com.careerdevs;
+package com.careerdevs.carChallange;
 
 // fields are Defined  here
 public class Car {

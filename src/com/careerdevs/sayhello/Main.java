@@ -11,16 +11,20 @@ public class Main {
     } // ask for first name
     public static void whatIsYourName(){
         Scanner scanner = new Scanner(System.in); // Parameter that needs to be used to take user input
+
         System.out.print("What is your first name? \n First Name: "); // variable created to store user input
         String firstName = scanner.nextLine();
+
         System.out.println("Hello, nice to meet you "+ firstName);
 
     }//Ask for full name
     public static void whatIsYourFullName(){
         Scanner scanner = new Scanner(System.in); // Parameter that needs to be used
-        System.out.println("What is your first name?");
+
+        System.out.println("What is your first name?\n First Name:");
         String firstName = scanner.nextLine();
-        System.out.println("What is your last name?");
+
+        System.out.println("What is your last name? \n Last Name:");
         String lastName = scanner.nextLine();
 
         System.out.println("It is so nice to formally meet you" + firstName + " " + lastName);
