@@ -39,7 +39,11 @@ public class Main {
         System.out.print("What is your vehicles gas tank percentage? \n Gas Tank %:");
         float carGasTankPercent = scanner.nextFloat();
 
-        System.out.print("The"+carMake+ " " + carModel + " " +"has a mileage of" +" "+ carMileage +" "+ "and gas percentage of" +" "+ carGasTankPercent );
+        Car car = new Car(carMake, carModel, carMileage, carGasTankPercent);
 
+
+
+
+        System.out.print("The"+ " " + car.model + " " + car.make + " " + "belongs to Marcus");
     }
 }
