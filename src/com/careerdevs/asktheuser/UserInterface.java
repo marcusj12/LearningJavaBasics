@@ -1,50 +1,44 @@
 package com.careerdevs.asktheuser;
 
-import java.util.Scanner;
 
 public class UserInterface {
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in); // Declare and assign the scanner variable
 
-        System.out.print("What is your name?\n First Name:");
-        String userFirstName1 = scan.nextLine(); // data type; then variable name
-        System.out.println("Thank you for your response "+" "+ userFirstName1);
+    public String userFirstName1;
+    public byte userAge1;
+    public boolean userHome1;
+    public float userHeight1;
+    public int moneySaved;
+    public short carPrice;
+    public double debtAmount;
+    public long netWorth;
 
-        System.out.print("What is your age?\n Age:");
-        byte userAge1 = scan.nextByte();
 
-        System.out.print("Do you own a home?");
-        boolean userHome1 = scan.nextBoolean();
+    public UserInterface(String userFirstName1, byte userAge1, boolean userHome1, float userHeight1, int moneySaved, short carPrice, double debtAmount, long netWorth) {
+        this.userFirstName1 = userFirstName1;
+        this.userAge1 = userAge1;
+        this.userHome1 = userHome1;
+        this.userHeight1 = userHeight1;
+        this.moneySaved = moneySaved;
+        this.carPrice = carPrice;
+        this.debtAmount = debtAmount;
+        this.netWorth = netWorth;
 
-        System.out.print("What is your height in inches?\n Height:");
-        float userHeight1 = scan.nextFloat();
+    }
 
-        System.out.print("What is the value of your vehicle?\n Price: ");
-        int carPrice = scan.nextInt();
 
-        System.out.print("Is your debt ratio positive or negative, if so what is it? Debt:");
-        short debtAmount = scan.nextShort();
-
-        System.out.println("Than");
+    @Override
+    public String toString() {
+        return "UserInterface{" +
+                "userFirstName1='" + userFirstName1 + '\'' +
+                ", userAge1=" + userAge1 +
+                ", userHome1=" + userHome1 +
+                ", userHeight1=" + userHeight1 +
+                ", moneySaved=" + moneySaved +
+                ", carPrice=" + carPrice +
+                ", debtAmount=" + debtAmount +
+                ", netWorth=" + netWorth +
+                '}';
     }
 }
 
 
-/*
-Create one question and response for each of the data types listed below.
-
-NUMBER TYPES:
-byte --> scanner.nextByte(); 1
-short --> scanner.nextShort();1
-int --> scanner.nextInt();1
-float --> scanner.nextFloat(); 1
-long --> scanner.nextLong();
-double --> scanner.nextDouble();
-
-BOOLEAN:
-boolean --> scanner.nextBoolean();1
-
-STRING:
-String --> scanner.nextLine();1
-
- */
