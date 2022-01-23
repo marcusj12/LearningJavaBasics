@@ -6,8 +6,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        UserInterface question1 = new UserInterface("Marcus", 24,true,5.10F,100000,7000,123.45, 3000000,);
-        System.out.println(question1.carPrice);
+        userInfo();
     }
     public static void userInfo () {
         Scanner scanner = new Scanner(System.in);
@@ -36,14 +35,10 @@ public class Main {
         System.out.print("What is your net worth?\n Enter Here:");
         long netWorth = scanner.nextLong();
 
+        // create object for user input
 
+        UserInterface userGeneratedInfo = new UserInterface(userFirstName1, userAge1, userHome1, userHeight1, moneySaved, carPrice, debtAmount,netWorth);
 
-
-
-
-
-
-
-
+        System.out.println("I have no idea that you were " + userGeneratedInfo.userAge1 + ". I hope that your debt will allow you to purchase a home soon");
     }
 }

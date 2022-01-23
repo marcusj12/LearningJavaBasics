@@ -24,7 +24,9 @@ public class Main {
         System.out.print("What is the marketCap of this company?: \n Market Cap:");
         double marketCap = scan.nextDouble();
 
-        System.out.println("Our background reports came back on" +" "+ companyName+" "+"The company has a net income of"+" "+ netIncome+"and a marketcap of"+" "+ marketCap+"B");
+        Company userGeneratedComp = new Company(companyName, yearEstablished,netIncome,marketCap);
+
+        System.out.println("Our background reports came back on" + userGeneratedComp.companyName+". The company has a net income of "+ userGeneratedComp.netIncome+"and a market-cap of "+ userGeneratedComp+"B");
 
 
 
