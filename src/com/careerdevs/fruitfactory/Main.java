@@ -28,10 +28,8 @@ public class Main {
         System.out.print("How many seeds does this fruit have?\n Enter Here:");
         int seedCount = scan.nextInt();
 
-        System.out.println("Did you know that" + userName+"'s"+" "+"favorite fruit is the" + fruitName +"."+""+ "It has a "+fruitColor+ "color and a seed count of" +" "+ seedCount);
+        Fruit userGeneratedFruit = new Fruit(userName,fruitName,fruitColor,hasSeeds,seedCount);
 
-
-
-
+        System.out.println("Did you know that" + userGeneratedFruit.userName +"'s favorite fruit is the "+userGeneratedFruit.fruitName +". It has a "+userGeneratedFruit.fruitColor +"color and a seed count of "+ userGeneratedFruit.seedCount);
     }
 }

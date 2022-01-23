@@ -19,21 +19,24 @@ public class Main {
         Scanner scan = new Scanner(System.in);
 
         System.out.print("What is the name of the song ? \n Song Name:");
-        String songName = scan.nextLine();
+        String title = scan.nextLine();
 
         System.out.print("What is the name of the artist ? \n Artist Name:");
-        String artistName = scan.nextLine();
+        String artist = scan.nextLine();
 
         System.out.print("What is the genre of this song ? \n Genre:");
-        String typeOfGenre = scan.nextLine();
+        String genre = scan.nextLine();
 
         System.out.print("Are there any features on this song ? \n Features:");
         String features = scan.nextLine();
 
         System.out.print("How long is the song? \n Song Length:");
-        String seconds = scan.nextLine();
+        int seconds = scan.nextInt();
 
-        System.out.println(artistName+" "+"is a"+" "+typeOfGenre +" "+"artist who is notoriously known for his hit record:" +""+songName+","+" "+" which has a runtime of"+" "+seconds+"secs'");
+        Song userGeneratedSong = new Song(title, artist, genre, features,seconds);
+
+        //System.out.println(userGeneratedSong.artistName+" "+"is a"+" "+typeOfGenre +" "+"artist who is notoriously known for his hit record:" +""+songName+","+" "+" which has a runtime of"+" "+seconds+"secs'");
+        System.out.println(userGeneratedSong.title);
 
     }
 

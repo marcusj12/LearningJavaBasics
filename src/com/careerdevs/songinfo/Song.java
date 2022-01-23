@@ -7,16 +7,16 @@ public class Song {
     public String artist;
     public String genre;
     public String features;
-    public int second;
+    public int seconds;
 
     // 2. Create the constructor
 
-    public Song(String songName, String artistName,String typeOfGenre, String features, int second) {
-        this.title = songName;
-        this.artist = artistName;
-        this.genre = typeOfGenre;
+    public Song(String title, String artist, String genre, String features, int seconds) {
+        this.title = title;
+        this.artist = artist;
+        this.genre = genre;
         this.features = features;
-        this.second = second;
+        this.seconds = seconds;
 
     }
 
@@ -27,7 +27,7 @@ public class Song {
                 ", artist='" + artist + '\'' +
                 ", genre='" + genre + '\'' +
                 ", features='" + features + '\'' +
-                ", second=" + second +
+                ", seconds=" + seconds +
                 '}';
     }
 }
