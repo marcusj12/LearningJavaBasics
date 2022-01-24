@@ -37,8 +37,8 @@ public class Main {
 
         // create object for user input
 
-        UserInterface userGeneratedInfo = new UserInterface(userFirstName1, userAge1, userHome1, userHeight1, moneySaved, carPrice, debtAmount,netWorth);
+        Survey userGeneratedInfo = new Survey(userFirstName1, userAge1, userHome1, userHeight1, moneySaved, carPrice, debtAmount,netWorth);
 
-        System.out.println("I have no idea that you were " + userGeneratedInfo.userAge1 + ". I hope that your debt will allow you to purchase a home soon");
+        System.out.println("I have no idea that you were " + Survey.userAge1 + ". I hope that your debt will allow you to purchase a home soon");
     }
 }

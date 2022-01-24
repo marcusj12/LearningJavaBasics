@@ -1,9 +1,9 @@
 package com.careerdevs.asktheuser2;
 
-public class UserInterface {
+public class Survey {
 
     public String userFirstName1;
-    public byte userAge1;
+    public static byte userAge1;
     public boolean userHome1;
     public float userHeight1;
     public int moneySaved;
@@ -12,7 +12,7 @@ public class UserInterface {
     public long netWorth;
 
 
-    public UserInterface (String userFirstName1, byte userAge1, boolean userHome1, float userHeight1, int moneySaved, short carPrice, double debtAmount, long netWorth) {
+    public Survey (String userFirstName1, byte userAge1, boolean userHome1, float userHeight1, int moneySaved, short carPrice, double debtAmount, long netWorth) {
         this.userFirstName1 = userFirstName1;
         this.userAge1 = userAge1;
         this.userHome1 = userHome1;
