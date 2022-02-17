@@ -8,9 +8,9 @@ public class CountDown {
 
     private static void iterative (int countDownFrom) {
         //option 1
-//        for (int i = 0; i < countDownFrom; i++ ) {
-//            System.out.println(i);
-//        }
+        for (int i = 0; i < countDownFrom; i++ ) {
+            System.out.println(i);
+        }
 
 //        //option2
 //        for (int i = countDownFrom; i > 0; i--) {
@@ -23,10 +23,10 @@ public class CountDown {
 //            i--;
 //        }
         //option 4
-        while ((countDownFrom > 0)){
-            System.out.println(countDownFrom);
-            countDownFrom--;
-        }
+//        while ((countDownFrom > 0)){
+//            System.out.println(countDownFrom);
+//            countDownFrom--;
+//        }
     }
 
 
